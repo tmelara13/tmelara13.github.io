@@ -16,7 +16,7 @@
             number: 1,
             speed: -3,
             gameItems: [
-                {type: 'sawblade',x:400,y:430},
+                {type: 'sawblade',x:400,y:430,},
                 {type: 'sawblade',x:800,y:450},
                 {type: 'sawblade',x:1300,y:500},
                 {type: 'sawblade',x:1700,y:500},
@@ -63,7 +63,14 @@
             enemy.y = groundY-50;
             enemy.addChild(redSquare);
             game.addGameItem(enemy);
+            enemy.velocityX = -1;
+            enemy.rotationalVelocity = 20;
     };
+
+
+    enemy.onPlayerCollision = function() {
+        
+        };
 
 };
 
