@@ -55,6 +55,7 @@
             createRobotBlade(x, y);
 
         }
+
             var enemy =  game.createGameItem('enemy',25);
             var redSquare = draw.rect(50,50,'red');
             redSquare.x = -25;
@@ -68,10 +69,7 @@
     };
 
 
-    enemy.onPlayerCollision = function() {
-        
-        };
-
+    
 };
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
